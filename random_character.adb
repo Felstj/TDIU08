@@ -8,7 +8,7 @@ procedure Random_Character(Heltal: in Integer) is
    B:String(1..7);
    C:Character;
    D:Character;
-   E,F:Integer:=1;
+   E,F:Integer;
     
 begin
      A:='/';
@@ -16,15 +16,24 @@ begin
      C:='\';
      D:='-'  ;
      E:= 0;
-     F:= Heltal;
-     for I in 1..Heltal loop
+    -- F:= 0;
+     F:=Heltal;
+     
+    
+     for I in 1..heltal loop
+	
    	--- loop för mellanslag
-	F:=Heltal;
-        for I in 1..F loop
+	F:=F-1;
+        for p in 1..F loop
+	   
 	Put(" ");
-        F:=F-1;
+       
 	end loop;
+	
+	
+	
 	Put(A);
+	
 	E:= E+1;
 	
 	for I in 1..E loop
@@ -39,7 +48,7 @@ begin
 	   Put(D);
 	 end loop;
  
-	--Put("-");
+
 	Put( C);
 	New_Line;
 	end loop;
