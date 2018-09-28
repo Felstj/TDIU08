@@ -6,14 +6,17 @@ with random_character;
 
 
 procedure Tal is
-A:Integer:=1;   
+A:Integer;   
 B:Integer;  
    
 begin
    
+  
    
    Put("Skirv in ett heltal");
    Get(B);
+   
+   A:=B;
    
    Eye(A);
    
@@ -25,4 +28,4 @@ begin
    
 end Tal;
   
-# TDIU08
+
